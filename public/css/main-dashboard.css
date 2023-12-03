@@ -1,0 +1,302 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p {
+    margin: 0 !important;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.font-1 {
+    font-size: 1rem !important;
+    font-weight: 100;
+}
+
+.font-2 {
+    font-size: 2rem !important;
+    font-weight: 100;
+}
+
+.font-3 {
+    font-size: 3rem !important;
+    font-weight: 100;
+}
+
+.carousel-item img {
+    height: 555px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    text-align: center
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+
+.menu-utama {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(30deg, #90e0ef -40%, #ffff 50%, #c7f9cc 110%);
+}
+
+.menu-utama h1 {
+    line-height: 3rem;
+}
+
+.menu-list {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto;
+}
+
+.menu-list svg{
+    height: 4rem;
+}
+
+.menu-list a{
+    border-radius: 1rem;
+}
+
+.menu-card {
+    justify-content: center;
+    flex-direction: column;
+    height: 13rem;
+    width: 13rem;
+}
+
+.home-icon,
+.profile-icon {
+    fill: #ffffff;
+}
+
+.profile,
+.administrasi,
+.umkm {
+    transition: 0.5s ease;
+    border-radius: 5px;
+}
+
+.tentang-desa {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(145deg, #90e0ef -40%, #ffff 50%);
+}
+
+.tentang-desa h1 {
+    line-height: 3rem;
+}
+
+.lokasi {
+    overflow: hidden;
+    gap: 2rem;
+}
+
+.potensi-alam h1 {
+    background: linear-gradient(to right, #5b5eff, #6af765);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+}
+
+.potensi-alam {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    border-radius: 1rem !important;
+}
+
+.card-img {
+    flex-direction: row !important;
+    width: fit-content !important;
+    align-self: center;
+    overflow: hidden;
+    border-radius: 4rem !important;
+    margin-bottom: 2rem;
+}
+
+.potensi-img-hero {
+    width: 20rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.pertanian {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.kelautan {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.potensi-img-detail {
+    width: 20rem;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+.potensi-deskripsi {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.wisata {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.wisata-contain {
+    gap: 5rem;
+}
+
+.wisata-contain img {
+    height: 25rem;
+    width: 21rem;
+    object-fit: cover;
+    border-radius: 12rem 12rem 1.5rem 1.5rem;
+    border: 0.5rem solid;
+    border-color: rgb(244, 244, 244);
+    box-shadow: 5px 5px 20px 0px rgba(83, 83, 83, 0.5);
+}
+
+.wisata-deskripsi h2{
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .menu-card {
+        justify-content: space-between;
+        width: 18rem;
+        flex-direction: row;
+        height: 5rem;
+    }
+
+    .menu-card :nth-child(1){
+        flex: 0 0 auto;
+    }
+
+    .menu-card :nth-child(2){
+        flex: 1;
+        text-align: center;
+    }
+
+    .menu-list {
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+
+    .menu-list svg{
+        height: 3rem;
+    }
+
+    .menu-list a{
+       width: 18rem;
+    }
+
+    .lokasi {
+        margin-top: 2rem;
+        gap: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lokasi iframe {
+        width: 320px;
+    }
+
+    .card-img {
+        flex-direction: column !important;
+    }
+
+    .potensi-alam {
+        overflow: hidden;
+    }
+
+    .potensi-img-hero {
+        width: 20rem;
+        height: 10rem;
+        object-fit: cover;
+    }
+
+    .potensi-img-detail {
+        align-self: center;
+    }
+
+    .potensi-deskripsi {
+        width: 20rem;
+    }
+
+    .pertanian {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .kelautan {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .wisata {
+        overflow: hidden;
+    }
+
+    .wisata-contain {
+        gap: 1rem;
+        flex-direction: column;
+    }
+}

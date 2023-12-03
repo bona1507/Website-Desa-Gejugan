@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media (max-width: 1398.5px) {
+    .col-sm-3 {
+        width: 33% !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .col-sm-3 {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-3 {
+        width: 100% !important;
+    }
+}
+
+.card-hover {
+    transition: .3s ease-out;
+}
+
+.card-hover:hover,
+.card-hover:focus {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 12px 1px rgba(72, 108, 255, 0.596)
+}
+.list-data-umkm:nth-child(2) {
+    background-color: rgb(240, 240, 240);
+}
+
+.list-data-umkm:hover {
+    background-color: rgb(200, 209, 209);
+}
+
+.img-control {
+    height: 11rem;
+    object-fit: cover;
+}

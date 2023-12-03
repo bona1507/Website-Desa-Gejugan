@@ -1,0 +1,24 @@
+footer {
+
+  font-size: 0.875em;
+  margin-top: auto;
+  height: 3.5rem;
+  background-color: rgb(241, 241, 241);
+  /* box-shadow: 1px 1px 6px 0 rgba(44, 44, 44, 0.5); */
+}
+
+footer {
+  gap: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gaya untuk tampilan mobile */
+@media screen and (max-width: 460px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+}

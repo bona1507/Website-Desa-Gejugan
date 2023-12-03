@@ -1,0 +1,23 @@
+.welcome {
+    margin: 1.5rem 0;
+}
+
+article {
+    background-color: white;
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    padding: 1.5rem;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+#fotoThumbnail {
+    height: 11rem;
+    object-fit: cover;
+}
+
+.col-sm-3x {
+    min-width: 300px;
+}

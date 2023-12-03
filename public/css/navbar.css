@@ -1,0 +1,66 @@
+*,html,body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #90e0ef, #c7f9cc);
+    box-shadow: 0px 0px 15px 10px rgba(197, 255, 201, 0.6);
+    z-index: 100;
+}
+
+/* ::-webkit-file-upload-button {
+    display: none;
+} */
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+p {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+.nav-left {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: .5rem 0;
+    color: black;
+}
+
+.nav-right {
+    text-decoration: none;
+    padding: .4rem .8rem;
+    border-radius: .4rem;   
+    color:rgb(0, 82, 245);
+    transition: ease 0.3s;
+}
+
+.nav-right:hover {
+    color:rgb(37, 71, 221);
+    box-shadow: 1px 1px 6px 0 rgba(44, 44, 44, 0.5)
+}
